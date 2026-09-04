@@ -29,3 +29,33 @@
 ## 下期观察
 
 - 关注 Salesforce in Claude 9 月 open beta 的 Tableau 指标接入与权限继承反馈。
+
+---
+
+# AI×分析团队转型 · 2026-09-04
+
+## 深挖
+
+1. **AngelList 自生长语义层**（8/28）：用 markdown 知识+Skills 替代 MetricFlow，merge 触发 manifest 自动生成 catalog，上游应用代码亦可反哺列注释。LLM 读文档写 SQL，靠 gotcha 表与展示 SQL 控错。本周试做 `AGENTS.md`+单技能+catalog 脚本。https://www.angellist.com/blog/the-semantic-layer-nobody-maintains
+
+2. **Anthropic Slack 问数部署**（8/13）：Skills 按服务端内容每次会话重读，模型变更须同步技能；服务账号只读治理层，列级 PII 拒绝并全量打标审计。先定账号边界与结构化埋点，再扩 forecasting/cohort 等 runbook 技能。https://claude.com/blog/self-service-data-analytics-in-slack-how-anthropic-deploys-claude-tag-for-ad-hoc-questions
+
+3. **Firebase 评测驱动 Skills**（8/11）：先写 CUJ 评测再写技能，通过率 31.7%→78.0%，并单独测技能激活率。把 Top 问数 golden set 纳入 CI，与 dbt PR 同审。https://firebase.blog/posts/2026/08/eval-driven-development-agent-skills/
+
+4. **dbt 2026 分析工程报告**：AI 产出增速超治理成熟度；信任优先级 66%→83%，速度 50%→71%。下一阶段从生成走向执行，纪律是自治前提。用报告框架做团队「加速-治理」差距自评。https://www.getdbt.com/resources/state-of-analytics-engineering-2026
+
+5. **Databricks AgentOps 手册**（9/2）：七阶段交付+RACI，SME 审 trace 建评测集，DevOps 三原则适配非确定性系统。选一条窄用例，用真实 trace 建 golden eval 再谈多 Agent 编排。https://www.databricks.com/blog/announcing-databricks-big-book-agentops
+
+## 趋势
+
+- 上下文资产（Skills/语义文档）正从「写一次」转向评测驱动 CI，与模型/表结构变更同频维护。
+- AgentOps 成为可复制的运营学科：评测、可观测、成本与干系人对齐打包进交付流水线。
+
+## 可带回团队的问题
+
+- IM 问数 Agent 用共享服务账号时，业务方如何感知「看不见的数据边界」？
+- AI 产出已加速，治理预算（评测、HITL、审计）是否按同等比例增长？
+
+## 下期观察
+
+- 关注 dbt 报告所述「从生成到执行」是否在 review gate 成熟前被提前上线。
