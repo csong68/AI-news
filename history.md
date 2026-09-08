@@ -29,3 +29,33 @@
 ## 下期观察
 
 - 关注 Salesforce in Claude 9 月 open beta 的 Tableau 指标接入与权限继承反馈。
+
+---
+
+# AI×分析团队转型 · 2026-09-08
+
+## 深挖
+
+1. **Cube Agentic Analytics Harness**（9/3）：一年生产实践显示，问数 Agent 的可靠性取决于 harness（上下文编排、工具契约、跨会话持久化、结果校验），而非模型升级。Semantic SQL 让 Agent 在治理视图内灵活探索；工具失败须返回可恢复提示；大结果截断须明示，否则易把前 100 行样本当全集。立项时将 harness 八原则纳入设计评审清单。https://cube.dev/blog/building-an-agentic-analytics-harness
+
+2. **Chalk 实时上下文**（9/5）：Agent 有效上下文本质是「请求时刻的快照」，依赖 cron 物化的窗口特征在多步推理中易静默过期。扑克示例说明聚合须按决策 instant 计算，延迟等同无数据。为核心问数链路定义数据新鲜度 SLA，超时则拒答或升级人工。https://chalk.ai/blog/context-has-a-timestamp
+
+3. **Fabric Data Agents GA**（9/3）：微软将 Data Agent 定位为「领域虚拟分析师」，经 Fabric IQ 语义层 grounding，可同时查仓内指标与 PDF/文档中的业务规则；整 Agent 可暴露 MCP 端点供 Copilot/外部编排调用。选一个「数在仓、规在文档」的高频业务域评估试点 ROI。https://www.jamesserra.com/archive/2026/09/microsoft-fabric-data-agents-bringing-structured-and-unstructured-data-together/
+
+4. **Agents Playbook 三层评测**：确定性断言在 CI 拦契约违规 → LLM-as-judge 按 rubric 评主观质量 → 生产监控采集编辑/重生成/升级等隐式信号。用户改稿距离是免费且高信噪的质量梯度，应回流为 golden case。为问数 Agent 沉淀首批 10 条评测用例并设 PR 合并门禁。https://playbook.agentskit.io/docs/pillars/quality/agent-eval-framework-pattern
+
+5. **Braintrust 多步 Agent 评测**：须 trace 记录逐步工具选择与参数；评测嵌入 CI/CD，PR 自动跑 golden set 并标注回归项。分析团队可将「指标口径断言 + SQL 结构校验」设为 Tier1 确定性门禁，再叠加 LLM judge。https://www.braintrust.dev/articles/ai-agent-evaluation-framework
+
+## 趋势
+
+- 分析 Agent 竞争焦点正从模型能力转向 harness 与上下文工程，语义层是底座而非全部。
+- 「上下文有时间戳」：实时特征 serving 渐成问数准确性的隐性前置，仅靠批处理物化不够。
+
+## 可带回团队的问题
+
+- 混合文档+指标问答时，文档 grounding 的权责划分与审计链如何设计？
+- 用户改稿/重生成率是否应纳入分析师 SLA，并驱动 Agent 迭代 backlog？
+
+## 下期观察
+
+- 关注 Cube 8 条 harness 设计原则文档发布后的企业落地反馈。
