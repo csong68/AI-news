@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-11
+
+## 深挖
+
+1. **Sigma 定制 Agent**（9/9）：周期分析要 scoped 数据、编排硬停止、observe→审批写入→自治、校验审计；同问不同答是常态。先锁一条周报只读+写回审批。https://www.sigmacomputing.com/blog/custom-ai-agents-data-analytics
+
+2. **Skills→Apps**：探索用 Skill；报告固定、受众扩、token 贵时迁 UC 确定性 App，LLM 只叙述。写切换条件防 vibe 债。https://medium.com/databrickscommunity/skills-for-speed-and-learning-apps-for-trust-and-scale-924de1ee24db
+
+3. **dbt AE 三职责**：架构（粒度/域界）、治理（测试/合约/血缘）、AI 上下文（MetricFlow）。KPI 转向语义资产维护。https://www.getdbt.com/blog/the-analytics-engineer-in-2026-system-designer-governance-owner-ai-context-provider
+
+4. **CData 四支柱**（9/3）：身份、最小权限、策略、SIEM 审计；审查从能查表到能证明授权链。https://www.cdata.com/blog/ai-agent-data-governance
+
+5. **Genie One 8 月**：Ontology 默认、MCP write、移动定时——问数扩至巡检写回，需 write 审批回滚。https://medium.com/@youssefmrini/whats-new-in-databricks-genie-one-august-2026-45d96c14b820
+
+## 趋势
+
+- Skill 探索 vs App 运营分化，缺 checklist 易堆债。
+- 治理从读权限上移至行动可审计。
+
+## 可带回团队的问题
+
+- 哪 3 条周期报告该 Skill→App？
+- 行动分级谁牵头：分析还是平台？
+
+## 下期观察
+
+- Databricks Glossary 对 Agent 术语消歧效果。
+
+---
+
 # AI×分析团队转型 · 2026-08-28
 
 ## 深挖
