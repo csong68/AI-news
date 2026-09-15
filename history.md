@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-15
+
+## 深挖
+
+1. **Thoughtworks AIRD**（9/14）：缺目录/语义层，问数 Agent 像无标签超市问路。选一条核心指标讲清「无目录=不可用」。https://www.thoughtworks.com/insights/blog/machine-learning-and-ai/ai-ready-data-part-1
+
+2. **EY 运营模型**（9/4）：价值在端到端重设计；82% 忧 token 成本，64% 有预算监控。先定 ROI 再配预算。https://www.reworked.co/digital-workplace/what-the-ai-era-operating-model-actually-looks-like/
+
+3. **人机 Agent 运营**（8/19）：系统地图标域主+用例；三档自治，影子运行后才扩权。https://nikhil-chandna71.medium.com/the-human-agent-operating-model-for-the-enterprise-f5c58c8cc057
+
+4. **多模型 QA 环**：生成-审查-裁决分离，证据不足阻断发布。周报接入第二模型审稿。https://data-analysis.cloud/how-multi-model-ai-review-loops-can-improve-analytics-report
+
+5. **BA 归属瓶颈**：Agent 写初稿后瓶颈在「谁署名」；交付物是具名复核。试点强制 reviewer 字段。https://medium.com/@squalliahmed/how-the-technical-business-analyst-role-changes-when-agents-write-the-first-draft-f8be9cd27384
+
+## 趋势
+
+- 治理嵌入工作流：80–90% 标准化、例外才人工。
+- 分析 QA 转向多模型分工。
+
+## 可带回团队的问题
+
+- 能否用「数据超市」故事说清 AIRD 优先级？
+- Agent 产出谁署名复核？缺字段能否拦截？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2。
+
+---
+
 # AI×分析团队转型 · 2026-09-11
 
 ## 深挖
