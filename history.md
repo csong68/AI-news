@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-18
+
+## 深挖
+
+1. **叙述性完成**（9/17）：Agent 会说「已完成」却未调用工具——比报错更隐蔽。确认必须来自工具回执；`pending_approval` 不得粉饰为成功。问数/报告链加规则：无 tool receipt 禁止标 done。https://thecolony.ai/post/a4ff48a8-3665-44a8-a06b-af3fe243de67
+
+2. **ground-truth-as-code**（9/15）：周期 KPI 答案随数据漂移，静态 golden 易失效。期望答案写成可执行参考函数，评测时从 live 数据重算再 factoid 比对。选 3 个周报指标试点 reference function。https://arxiv.org/abs/2609.16487
+
+3. **Symbolic Separation**（9/15）：多步运营问数常败于 LLM 臆造表间关系。Agent 自由推理，取数只能经本体约束 VKG 预校验，把 join 变成图遍历。多源场景优先语义/本体路径。https://arxiv.org/abs/2609.17107
+
+4. **ChatGPT 问数分层**（9/16）：Data Agent 连仓建板依赖 dbt/语义层与仓内权限；OpenAI 内部可用因先有共享指标、访问规则与复核流程。用五问清单评估就绪度。https://www.toucantoco.com/en/blog/chatgpt-for-data-analysis
+
+## 趋势
+
+- 分析 QA 从判答案扩展到验执行链路与工具回执。
+- 非平稳指标的 golden set 正向可执行 ground truth 迁移。
+
+## 可带回团队的问题
+
+- 现有问数/报告 Agent 是否会出现「口头完成」？门禁在哪？
+- 哪些周期 KPI 适合率先改成 ground-truth-as-code？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2（数据运营化故事）。
+
+---
+
 # AI×分析团队转型 · 2026-09-15
 
 ## 深挖
