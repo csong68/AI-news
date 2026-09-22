@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-22
+
+## 深挖
+
+1. **Novo Nordisk 分析师 Agent**（9/21）：Senior Analyst 把领域知识与决策节奏编码为团队共用 text-to-SQL 助手，日常取数 30 秒出初稿，分析师仍 HITL 复核后才对外。选一条高频周报，由最熟业务的分析师主导定义 prompt/校验规则。https://www.dataiku.com/blog/novo-nordisk
+
+2. **Airbnb Insight Miner**（9/17）：把 extract-embed-cluster 等方法论固化为 harness，DS 从跑流程转向迭代方法，非技术岗也可复用同一套调查 rigor。梳理团队 1 个可复用分析套路，写成共享 package。https://medium.com/airbnb-engineering/beyond-the-model-engineering-ai-infra-with-scientific-judgement-371316d43261
+
+3. **Microsoft 工作流重设计**（9/17）：先简化端到端流程、建单一事实源，再部署 100+ 领域 Agent；在 broken process 上加 Agent 只会制造更长队列。画一条核心分析链的「简化后理想流」再谈 Agent 切入点。https://blogs.microsoft.com/blog/2026/09/17/what-weve-learned-from-microsofts-own-ai-transformation/
+
+4. **Trace Don't Trust**（9/19）：结果正确不代表过程可靠——同文件重复读 4 次、过期数据重拉仍可能 green。在 harness 记录 tool trace，对 exact duplicate 设硬 fail。https://www.thegreenreport.blog/articles/trace-dont-trust-testing-what-your-ai-agent-actually-called/trace-dont-trust-testing-what-your-ai-agent-actually-called.html
+
+5. **Fiddler HITL 评测**（9/18）：人工评测定位是校准自动 judge 与发现失败模式，非逐条审批；必须看完整 trace 而非最终答案。为问数 Agent 建 3 维度 rubric，本周标注 50 条 trace。https://www.fiddler.ai/blog/human-in-the-loop-evaluation-llm-apps
+
+## 趋势
+
+- 分析转型焦点从「谁会用 AI」转向「谁的方法论值得编码成 harness」。
+- Agent QA 从验答案延伸到验 tool trace 效率与冗余。
+
+## 可带回团队的问题
+
+- 团队里哪条分析链路最适合由一线分析师主导封装成 Agent？
+- 现有评测是否只看最终 SQL/数字，忽略了 tool 调用 trace？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2（数据运营化故事）。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
