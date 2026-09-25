@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-25
+
+## 深挖
+
+1. **run-assert-eval**（9/24）：测风险→运行时策略→同 frozen 集复评；示例越权约 30%→6%。改策略须同集复跑。https://commandline.microsoft.com/run-assert-eval-responsible-ai-agent-risk-discovery-at-runtime/
+
+2. **Teradata Tera**（9/23）：多步分析先 DDL 再 SQL，Skills+harness。试点拆探 schema、查数、复核图。https://www.teradata.com/insights/ai-and-machine-learning/meet-tera-agentic-coworker
+
+3. **治理五柱**（9/22）：审计须答「哪个 Agent、代谁」；网关每跳 enforcement。https://www.truefoundry.com/blog/ai-agent-governance
+
+4. **非聊天工作流**（9月）：AI 在「问题→验证→洞察」链内；分析师署名。https://medium.com/@kartikbhaskarx/ai-is-not-a-chatbot-for-data-analysts-how-to-build-an-ai-powered-data-analytics-workflow-0e371566decf
+
+5. **Kedro 纪律**（QuantumBlack）：Agent 与 ETL 共管道；评测集 catalog 钉快照回归。https://medium.com/quantumblack/generative-ai-workflows-need-engineering-discipline-to-scale-beyond-the-demo-a9928135e393
+
+## 趋势
+
+- QA 扩到路径合规与举证。
+- 平台打包 DDL 感知多步 harness。
+
+## 可带回团队的问题
+
+- 有无 frozen 集？策略变更谁同集复评？
+- 问数是否强制 schema 先于 SQL？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
