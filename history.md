@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-09-29
+
+## 深挖
+
+1. **Fabric AI 就绪测评**（9/24）：就绪不只是开 Copilot——语义模型描述/度量、Prep for AI、Ontology 与 Data Agent 指令分层，且 Agent 元数据可能与源分裂。对 1 个核心 semantic model 用 5 个 benchmark 问题测缺口。https://www.jamesserra.com/archive/2026/09/microsoft-tools-for-making-data-ai-ready/
+
+2. **嵌入式监督**（9/23）：HITL 从末端统审前移到阈值/规则/硬停止，分析师更像 Agent 运营者。选一条月报链，把 3 条例外写成门控而非全文审核。https://www.alteryx.com/blog/rethinking-human-in-the-loop-for-enterprise-ai
+
+3. **监管问数四控**（9/23）：MCP 只管连通；语义、权限、处理位置、SQL 审计须分列，全链路 trace 还需 Agent 框架补。用四象限标现有问数栈 gap。https://www.exasol.com/blog/agentic-analytics-governance-regulated-data/
+
+4. **Agent 事件字段**（9月 arXiv）：专家建议事故报告须含 memory、自治级别、tool 轨迹，传统 IR 不够。为分析 Agent 定最小 incident 模板并对齐 tool receipt。https://arxiv.org/abs/2609.24515
+
+## 趋势
+
+- 审计从 SQL 日志扩展到 incident 字段与跨系统 trace 拼接。
+- HITL 预算从末端复核迁到前置规则与阈值。
+
+## 可带回团队的问题
+
+- 核心 semantic model 能否用 benchmark 问答量化 AI-ready？
+- DB 审计表与 Agent trace 能否合成一条可复盘事件？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2；James Serra Part 3（Prep vs Agent instructions 分工）。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
