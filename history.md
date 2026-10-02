@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-10-02
+
+## 深挖
+
+1. **Tableau Knowledge Engine**（9/30）：Agent 需要跨 CRM、仪表盘与文档可遍历的运行时知识；语义、本体与知识图谱约束指标与合法路径，用法与纠错会反哺图谱。选一条跨系统 KPI，列出 Agent 须走通的实体关系边。https://www.salesforce.com/blog/knowledge-engine-how-we-built-trustworthy-agentic-analytics/
+
+2. **反 Agent 蔓延**（9/30）：各队独立接线会让「活跃客户」等定义漂移；规模化靠共享语境层与统一控制面（权限、trace、评测、成本）。盘点 3 个在研 Agent 是否复用同一语义资产与网关。https://www.databricks.com/blog/how-scale-agentic-applications-without-creating-ai-sprawl
+
+3. **Agent Analytics**（9/23）：Trace 只说明调用了什么；要把会话拆成带 user_id 的事件，写清 task success 规则并关联工单或业务结果。对已上线问数 Agent 先定成功率、工具错误率、单次成功成本。https://infinisynapse.com/en/blog/analytics-agent
+
+4. **治理早于模型**（9/17）：Agent 会把「官方系统 vs 一线表格/例外」落差自动化；须定义权威源、冲突消解与低置信拒答。对照一条 Agent 化指标链，标出 catalog 未收录的平行控制。https://medium.com/@jacqueline.guilhen/ai-governance-starts-before-the-model-b39aac21ee3e
+
+## 趋势
+
+- 语义层向运行时知识引擎 + 用法反馈（knowledge gravity）演进。
+- Agent 规模化焦点从选模型转向共享语境与控制面。
+
+## 可带回团队的问题
+
+- 跨系统 KPI 是否已有 Agent 可遍历的知识路径？
+- 能否用同一 user_id 证明问数降低了后续工单或追问？
+
+## 下期观察
+
+- Thoughtworks AIRD Part 2 是否给出数据运营化落地故事。
+
+---
+
 # AI×分析团队转型 · 2026-09-29
 
 ## 深挖
