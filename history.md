@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-10-06
+
+## 深挖
+
+1. **Genie Ontology 周报复盘**（10/5）：OntoRank 按认证/用量/作者排序语境；探索式找表耗 token 仍易错源，Ontology 推理前注入 metric view、Pages 且权限感知。选一条周报复刻「模板+排程+共享 Agent」，交付必查 citations。https://www.databricks.com/blog/how-genie-ontology-powers-product-development-databricks
+
+2. **Metabase 语义层 2.0**（10/1）：由查询史推断候选口径再人审；读者含 LLM，口径更新从 sprint 缩至文档级。Top3 指标试点 AI 草案+负责人日签批。https://www.metabase.com/blog/semantic-layer-ai-analytics
+
+3. **Data 360 可信语境**（10/2）：问数 Agent 需一致画像、RAG、语义、记忆、治理五要素；Headless/MCP 对外复用同一语境。五问清单排内部栈缺口。https://www.salesforce.com/blog/why-your-ai-needs-trusted-context-data-360/
+
+4. **Agentforce Memory**（10/5）：无状态迫重复背景；Memory 要开关、控制台审改删，隐私/遗忘是架构要件。试点仅存批准口径摘要，默认关并审计。https://engineering.salesforce.com/ai-agents-need-memory-building-persistent-memory-for-agentforce/
+
+## 趋势
+
+- 语境从 upfront 建模转向「治理核心+snippet 学习+权威排序」。
+- 分析 Agent 扩至 MCP 跨系统检索、排程与专 Agent 分享。
+
+## 可带回团队的问题
+
+- 周期报告能否强制 citation 清单？
+- Memory 与零残留合规如何分层？
+
+## 下期观察
+
+- Ontology snippet 人审 SLA 是否绑定 OntoRank。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
