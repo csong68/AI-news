@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-10-09
+
+## 深挖
+
+1. **Agent 路径三分法**（10/6 社区）：Genie Agent 封装域内可信语境；Genie One+Skills 服务业务重复流程；Agent Bricks 才做定制编排与多 Agent。用「最小够用路径」立项，避免一上来全栈代码 Agent。https://community.databricks.com/t5/technical-blog/how-to-choose-the-right-ai-agent-path-on-databricks/ba-p/168706
+
+2. **Skills 网关治理**（10/5）：Genie One Skill 可发布共享，访问控制走 Unity Catalog 目录/Schema 标准特权。把个人 prompt 技巧收成可审计的组织资产。选一条周报 Skill 试点发布、权限回收与变更记录。https://docs.databricks.com/aws/en/ai-bi/release-notes/2026
+
+3. **语义治理策略**（Google 文档）：IAM 只证明「能调工具」；Semantic Governance 用自然语言约束逐条评估 proposed tool call 是否偏离用户意图与业务规则，支持 DRY_RUN 先记 verdict 再拦截。问数/写回 Agent 上线前用影子模式积累误判样本。https://docs.cloud.google.com/gemini-enterprise-agent-platform/govern/policies/semantic-governance-overview
+
+4. **Agentic Analyst 四技能**（Databricks 实践谈）：信任（指令/基准/metadata）、上下文（指标视图与 ontology）、决策自动化、体验（Slack/定制应用）——靠上下文工程而非堆 prompt。可按四块拆岗位能力缺口与培训计划。https://answers.databricks.com/become-agentic-analyst-build-trustworthy-ai-analytics-genie-EQg0N5z_LyQ
+
+5. **排程与成本门**（9/24 发版）：服务主体调用 Genie 按标准 PAYG 计费且不计入个人免费额度；Genie One 可对会话内 tool 动作用分类器自动批准或阻断越界请求。排程巡检改服务主体前设预算告警与越界动作抽检。https://docs.databricks.com/aws/en/ai-bi/release-notes/2026
+
+## 趋势
+
+- 分析 Agent 立项焦点从「选模型」转向「选体验层级 + 共享语境资产」。
+- 治理从静态权限扩展到运行时「意图 × 工具调用」语义策略。
+
+## 可带回团队的问题
+
+- 在研用例分别落在 Agent、Skill、代码三条路径的哪一层？是否存在该降级为 Skill 的 over-engineering？
+- 自动批准 tool 动作时，谁定义 scope 与升级路径？
+
+## 下期观察
+
+- Unity Gateway 管辖 Skills 后，跨团队 fork 与变更审计是否满足内控要求。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
