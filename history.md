@@ -124,7 +124,7 @@
 
 ## 深挖
 
-1. **Tableau Customer Zero 四框架**（10/12）：Salesforce 内部先上万员工再对外；无语义 grounding 时 200+ 真实问句测评仅约 30–45%，接入语义模型、业务偏好与校验问答后超 85%。瓶颈是治理与信任，不是接数。将「定义一致、内容 sandbox→prod、Hyper 预聚合控 TCO、答案可解释」写成四张验收表。https://www.salesforce.com/blog/tableau-agentic-analytics-at-salesforce-customer-zero/
+1. **Tableau Customer Zero 四框架**（10/12）：Salesforce 内部先上万员工再对外；无语义 grounding 时 200+ 真实问句测评仅约 30–45%，接入语义模型、业务偏好与校验问答后超 85%。瓶颈是治理与信任，不是接数。将「定义一致、内容 sandbox→prod、Hyper 预聚合控 TCO、答案可解释」写成四张验收表并纳入发布门禁。https://www.salesforce.com/blog/tableau-agentic-analytics-at-salesforce-customer-zero/
 
 2. **Looker Data Apps**（10/12）：用自然语言生成托管在 Looker 内的运营级应用，继承语义模型与 RLS，并提供生成 SQL 审计，避免原型死在合规 sandbox。分析负责人应把「可发布应用」纳入与 dashboard 同级的变更流程。为 1–2 条高频流程试点「描述→应用→发布」，强制与 dashboard 共用同一语义版本号。https://cloud.google.com/blog/products/business-intelligence/introducing-looker-data-apps
 
