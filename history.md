@@ -117,3 +117,33 @@
 ## 下期观察
 
 - 关注 Salesforce in Claude 9 月 open beta 的 Tableau 指标接入与权限继承反馈。
+
+---
+
+# AI×分析团队转型 · 2026-10-16
+
+## 深挖
+
+1. **Tableau Customer Zero 四框架**（10/12）：Salesforce 内部先上万员工再对外；无语义 grounding 时 200+ 真实问句测评仅约 30–45%，接入语义模型、业务偏好与校验问答后超 85%。瓶颈是治理与信任，不是接数。将「定义一致、内容 sandbox→prod、Hyper 预聚合控 TCO、答案可解释」写成四张验收表。https://www.salesforce.com/blog/tableau-agentic-analytics-at-salesforce-customer-zero/
+
+2. **Looker Data Apps**（10/12）：用自然语言生成托管在 Looker 内的运营级应用，继承语义模型与 RLS，并提供生成 SQL 审计，避免原型死在合规 sandbox。分析负责人应把「可发布应用」纳入与 dashboard 同级的变更流程。为 1–2 条高频流程试点「描述→应用→发布」，强制与 dashboard 共用同一语义版本号。https://cloud.google.com/blog/products/business-intelligence/introducing-looker-data-apps
+
+3. **跨云对话分析**（10/13）：Borderless Lakehouse 经 Iceberg REST 联邦 Databricks Unity、Snowflake Horizon、AWS Glue，BigQuery 对话分析可对联邦表 NL 探索而无需搬数。多云 BA 团队先画「哪些域可联邦、权限如何继承」，再选对话入口。https://cloud.google.com/blog/products/data-analytics/cross-cloud-conversational-analytics-with-borderless-lakehouse
+
+4. **PostHog 语义层治理**：原则「AI 生成、人拥有」——Agent 只能 proposed，promote/认证需 typed confirm 与独立 API scope。把分析师复核从会议搬到 catalog 工作流。MCP/CI 用只读 catalog 密钥，审批密钥仅负责人。https://posthog.com/docs/semantic-layer/governance
+
+5. **Gemini 运营报告技能**：业务用户 NL 建运营报表，查询保存后按需重跑不再消耗 token，答案与首次一致。这相当于把「探索」与「生产」计费拆开。固定 KPI 周报改为「LLM 建模一次 + 调度/SQL 复跑」，把 LLM 预算留给探索性问题。https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026
+
+## 趋势
+
+- 语义层预聚合 + MCP 返回答案（非原始行）成控幻觉与账单的双杠杆；Tableau Customer Zero 把 TCO 与准确率绑在同一架构决策上。
+- 开放 catalog 联邦正成为跨云 Chat BI 的前置条件，分析团队需参与联邦域划分而非只选前端。
+
+## 可带回团队的问题
+
+- 扩面前是否具备「无语义 vs 有语义」的同类问句准确率对比？
+- Agent 草稿指标谁有系统级 promote 权，还是仍依赖线下签字？
+
+## 下期观察
+
+- Looker Data Apps preview 的企业发布与 SQL 审计实践。
