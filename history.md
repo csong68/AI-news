@@ -147,3 +147,33 @@
 ## 下期观察
 
 - Looker Data Apps preview 的企业发布与 SQL 审计实践。
+
+---
+
+# AI×分析团队转型 · 2026-10-20
+
+## 深挖
+
+1. **Metabase 瓶颈迁移**（10/19）：AI 抹平「谁写 SQL」，瓶颈变成准确率与可验证性。解法是在使用侧做语义层与 verified 标注，让 AI 答案可追溯到 transform。本周给 3 个高频指标打 verified 标签。https://www.metabase.com/blog/how-to-build-a-semantic-layer-for-ai-analytics
+
+2. **Snowflake 可观测 API**（10/19）：Agent 查遥测成功率从 7.8% 升至 69%，因实体解析与域知识被封装成 API 而非裸工具。分析/平台团队应把排障问法产品化为可调用接口。https://www.snowflake.com/en/blog/engineering/observability-apis-agent-investigation-success/
+
+3. **AtScale 审模型**（10/14）：AI 可草拟语义层，错定义往往无报错。建模者从写定义转向 PR 式审批与纠偏沉淀。指定语义 Reviewer 与 RACI。https://www.atscale.com/blog/stop-writing-your-semantic-model-start-reviewing-it/
+
+4. **dbt Wizard harness**（10/14）：可信 Agent 需懂 DAG——血缘、diff、测试先于叙述。把 lint 与 data test 接成 Agent 输出硬门。https://docs.getdbt.com/blog/wizard-agent-harness
+
+5. **Genie 代码执行**（10/9）：Genie One 沙箱跑 Python 仍走 UC 权限，分析 Agent 从 SQL 扩到脚本。划清「仅 SQL」与「可执行代码」用例白名单。https://docs.databricks.com/aws/en/ai-bi/release-notes/2026
+
+## 趋势
+
+- 分析师经验正被封装为领域 API，减少 Agent 裸查原始日志/表。
+- 语义层重心从建设转向审查、ownership 与 verified 分级。
+
+## 可带回团队的问题
+
+- 当前瓶颈是「取数慢」还是「不敢信 AI 给的数」？
+- 谁对 AI 草拟的指标定义负最终签字权？
+
+## 下期观察
+
+- Snowflake 管道自愈 Agent 的人审 PR 模式是否可复制到指标异常巡检。
