@@ -177,3 +177,31 @@
 ## 下期观察
 
 - Snowflake 管道自愈 Agent 的人审 PR 模式是否可复制到指标异常巡检。
+
+---
+
+# AI×分析团队转型 · 2026-10-23
+
+## 深挖
+
+1. **Knowledge Catalog 自学习**（10/22）：手填目录易过期；系统读交互轨迹找缺口，从文档/代码补定义并带置信度。开 enrichment，低分必 steward 审。https://cloud.google.com/blog/products/data-analytics/knowledge-catalog-self-learning-context-enrichment-for-ai-agents
+
+2. **Snowflake Agentic**（10/22）：问数变委派多步调查，靠 Ground/Analyze/Act，Assure 管权限与 spend。用流失案例定委派边界与审计字段。https://www.snowflake.com/en/blog/agentic-analytics-data-foundation/
+
+3. **Horizon Context**（10/20）：定义散在报表与 pipeline；连 metadata 并向列传播，专家可策展。抽 retention 链核对 Agent 与 BI 同源。https://www.snowflake.com/en/blog/horizon-context-business-knowledge-ai/
+
+4. **Predictive AI Functions**（10/14）：预测/异常/驱动以 SQL 进 Genie，模型平台托管。选时序 KPI 对比 notebook 自建复核成本。https://www.databricks.com/blog/unlock-powerful-insights-and-forecasts-predictive-ai-functions
+
+## 趋势
+
+- 语境维护靠交互反馈与 context set，人审提案替代手写字段。
+- Agentic 标配 Assure，效能计调查链路与 token/spend。
+
+## 可带回团队的问题
+
+- proposed/低置信 enrichment 谁按周签字？
+- 调查 Agent 错因能否 lineage+Assure 复盘？
+
+## 下期观察
+
+- OKF 能否对接现有 dbt/LookML 语义资产。
