@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-10-27
+
+## 深挖
+
+1. **BI「为什么错」**（10/26）：Copilot 只复述错标签，难追 dbt CASE。三 MCP 分专 Agent，六分钟三问附校验 SQL。查根因链缺哪环。https://www.getdbt.com/blog/mcp-ai-agent-dashboard-debugging
+
+2. **评测驱动**（10/26）：裸表 0%→verified 94.7%，增益在语义层非换模型。测不准不上线，golden 套件分层加料。https://www.getdbt.com/blog/data-culture-ai-analytics-agent-trust-context
+
+3. **LookML 入 Catalog GA**（10/26）：公式/Join/血缘进 context graph 并近实时同步。Agent 须拿确定性定义。https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga/
+
+4. **超越采纳**（10/23）：同等交互可能是查概念或建管道；分基础/应用/Agentic 看产能。周报加工作类型。https://www.snowflake.com/en/blog/measure-ai-value-beyond-adoption/
+
+5. **Wizard 验 DAG**（10/26）：人判 downstream 影响非 diff；dev 先验再合并，incident 降 15–20%。https://www.getdbt.com/blog/dbt-wizard-ai-agent-validation-lineage
+
+## 趋势
+
+- 排查从 BI 金表上移至建模层与 compiled SQL。
+- KPI 从交互量转向 Agentic 占比。
+
+## 可带回团队的问题
+
+- 能否量化每层语义对问数准确率的贡献？
+- 语义是否进统一 catalog，还是仍在猜 Join？
+
+## 下期观察
+
+- Gateway OTel 能否统一问数成本与轨迹。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
