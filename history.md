@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-03
+
+## 深挖
+
+1. **Snowflake 受限会话**（10/30）：Agent 继承用户权限仍可能误删表或触 PII；RSS 为 Agent 会话设权限天花板（可禁角色、限写沙箱）。平台组发布默认 RSS 并纳入 onboarding。https://www.snowflake.com/en/blog/engineering/control-what-ai-agents-can-do-in-your-snowflake-sessions/
+
+2. **DataHub beta**（10/28）：裸接仓约 40% 准；全库暴露更差。先单域 golden eval，再叠技术/语义/知识层，Miro 约 90%。本周锁一域+十题基线再扩。https://datahub.com/blog/making-ai-agents-trustworthy-lessons-from-beta/
+
+3. **Careem 验真 PR**（10/26）：生成容易、合并在验；spec-lock 歧义指标，沙箱 compile/test 自修复至绿才提 PR。把口径追问写进 intake 模板。https://www.getdbt.com/blog/careem-ai-dbt-model-testing-validation
+
+4. **dbt Skills 评估**（10/30）：22 轮 ticket 显示方差来自流程非技能；Skills 宜留团队 deploy/review 与 Mesh 等冷门栈。eval 测 backup 与定义遵守。https://docs.getdbt.com/blog/do-coding-agents-still-need-dbt-skills
+
+## 趋势
+
+- 问数 Agent 权限从「等于用户」改为会话级降权。
+- 上下文从一次性文档转向 eval 驱动的持续运营。
+
+## 可带回团队的问题
+
+- 仓侧 Agent 是否已有低于用户的默认权限边界？
+- 能否用十道域内金题量化「加一层上下文」的边际收益？
+
+## 下期观察
+
+- DataHub Context GA 对 context 分工的落地反馈。
+
+---
+
 # AI×分析团队转型 · 2026-10-27
 
 ## 深挖
