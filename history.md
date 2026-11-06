@@ -2,6 +2,30 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-06
+
+## 深挖
+
+1. **CoCo 进 Excel/Sheets**（11/5）：表内建公式/透视，SQL 存 workbook 可刷新，RLS 随角色；接 Semantic Views。CSV 快照→ live 模型。选一条手工导出周报试点。https://www.snowflake.com/en/blog/snowflake-coco-microsoft-excel-google-sheets/
+
+2. **语义联邦 GA**（10/29）：LookML/dbt/Snowflake 语义视图进同一 context graph，冲突口径并排溯源。复用既有定义而非新 prompt。盘点 5 个 KPI 多源冲突。https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog
+
+3. **LangChain 上下文**（10/27）：描述→guides→语义层→endorsement 约 40× 自助问数；endorse 滥发则可信信号失效。1 份业务 guide 进 repo+CI 同步。https://www.getdbt.com/blog/langchain-self-serve-analytics-ai-agent-context
+
+4. **Meta:Context**（10/26）：解读语境跟 metric 同 YAML 走 PR；缺 card 则根因分析无据。为 2 个易误读 KPI 写 card。https://www.getdbt.com/blog/meta-context-dbt-semantic-layer-business-context
+
+## 趋势
+
+- 分析 AI 迁入 Excel/Sheets，产物是可刷新 workbook 非对话截图。
+- Catalog 推 context set 自学习；开量前先定人审门槛（11/4）。
+
+## 可带回团队的问题
+
+- 还有多少「影子 CSV」可用 workbook 内嵌 SQL+刷新替代？
+- dbt 与 BI 口径不一致时，Agent 上线前谁对账？
+
+---
+
 # AI×分析团队转型 · 2026-11-03
 
 ## 深挖
