@@ -2,6 +2,35 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-10
+
+## 深挖
+
+1. **QueryData 契约**（11/4）：运营库 Agent 用模板、facet、值解析做消歧合成，与分析仓 Knowledge Catalog context set 分工不同。业务库先配十类高频问模板。https://docs.cloud.google.com/gemini/data-agents/querydata
+
+2. **上下文爬坡**（11/5）：Context Engineering Agent 用金题 hill-climb 补模板/facet，上下文可进 Git。定 15 道金题与版本门槛。https://docs.cloud.google.com/gemini/data-agents/querydata/sql-postgres/build-context-sets
+
+3. **AI in BI 门禁**（11/8）：先语义层+评测+复核再开聊天；身份透传、域内指标、只读，日志记问题/指标/SQL。三 personas 测 RLS。https://duces.co/blog/ai-in-bi-semantic-layer
+
+4. **Business Ontology**（11/3）：Sense 推断、Ontology 人审、Semantic Views 固定算式。3 个跨域 KPI 指定 ontology steward。https://www.snowflake.com/en/blog/business-ontology-context/
+
+5. **意图-SQL 分界**（11）：NL 到语义意图，SQL 由引擎确定生成；token 验指标免审 SQL。评审上移到语义模型。https://docs.thoughtspot.com/cloud/26.11.0.cl/semantic-layer
+
+## 趋势
+
+- 语义资产从指标目录变为可执行契约：canonical 问法、join 与取值规则进入查询路径。
+
+## 可带回团队的问题
+
+- 运营库与分析仓的 context set 合并还是分域治理？
+- 错题能否按缺模板/缺 facet/口径冲突分类改进？
+
+## 下期观察
+
+- QueryData preview 与 secure view 行权限联动的实践反馈。
+
+---
+
 # AI×分析团队转型 · 2026-11-06
 
 ## 深挖
