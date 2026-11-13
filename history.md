@@ -2,6 +2,147 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-13
+
+## 深挖
+
+1. **Genie 全语境**（11/11）：同一对话内结构化表与 UC Volume 文档并重，页级引用且受权限约束。选一条「表+合同/纪要」混合问法试点，无引用不得对外。https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work
+
+2. **连接器白名单**（11/11）：MCP GA，作者按 Agent 勾选 Slack/Jira 等读写能力，经 Unity Gateway 统一治理。为 2 个域 Agent 列只读与可写工具矩阵并评审。https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work
+
+3. **BigQuery measures GA**（11/10）：指标与关系图合一 Property Graph，grain-lock 避免 join 重复计数，Catalog 可检索同义词。挑 1 个需「what+why」的周例会问题映射图模型。https://cloud.google.com/blog/products/data-analytics/bigquery-measures-ga-unifying-bi-metrics-and-knowledge-graphs
+
+4. **仓内预置上下文**（11/11）：检索与分块一次入仓复用，减多 MCP 与长 payload；dbt 实践 token 降逾 50%。高频访谈/工单摘要改 dbt 表+单入口 MCP。https://www.getdbt.com/blog/economic-case-warehouse-first-ai-context
+
+5. **Agent 就绪沟**（11/10）：41% 已上生产 Agent，仅 15% 自认数据底座够；成熟度在语义/血缘非模型档位。用自评与现网 Agent 清单对齐 Q1 能力项。https://www.getdbt.com/blog/ai-maturity-trusted-data-to-trusted-ai-agents
+
+## 趋势
+
+- 分析 Agent 从单仓 SQL 走向「表+文档+协作工具」闭环，效能指标需加入连接器与引用审计。
+
+## 可带回团队的问题
+
+- 文档语境是否纳入问数验收（无页码/无权限校验则不放行）？
+- Agent 把查询量放大时，成本预算按人头还是按会话/工具调用计量？
+
+## 下期观察
+
+- Lakehouse//RT 在 Agent 高并发下的账单与 SLA 对照案例（11/12 厂商叙事待第三方验证）。
+
+---
+
+
+# AI×分析团队转型 · 2026-11-10
+
+## 深挖
+
+1. **QueryData 契约**（11/4）：运营库 Agent 用模板、facet、值解析做消歧合成，与分析仓 Knowledge Catalog context set 分工不同。业务库先配十类高频问模板。https://docs.cloud.google.com/gemini/data-agents/querydata
+
+2. **上下文爬坡**（11/5）：Context Engineering Agent 用金题 hill-climb 补模板/facet，上下文可进 Git。定 15 道金题与版本门槛。https://docs.cloud.google.com/gemini/data-agents/querydata/sql-postgres/build-context-sets
+
+3. **AI in BI 门禁**（11/8）：先语义层+评测+复核再开聊天；身份透传、域内指标、只读，日志记问题/指标/SQL。三 personas 测 RLS。https://duces.co/blog/ai-in-bi-semantic-layer
+
+4. **Business Ontology**（11/3）：Sense 推断、Ontology 人审、Semantic Views 固定算式。3 个跨域 KPI 指定 ontology steward。https://www.snowflake.com/en/blog/business-ontology-context/
+
+5. **意图-SQL 分界**（11）：NL 到语义意图，SQL 由引擎确定生成；token 验指标免审 SQL。评审上移到语义模型。https://docs.thoughtspot.com/cloud/26.11.0.cl/semantic-layer
+
+## 趋势
+
+- 语义资产从指标目录变为可执行契约：canonical 问法、join 与取值规则进入查询路径。
+
+## 可带回团队的问题
+
+- 运营库与分析仓的 context set 合并还是分域治理？
+- 错题能否按缺模板/缺 facet/口径冲突分类改进？
+
+## 下期观察
+
+- QueryData preview 与 secure view 行权限联动的实践反馈。
+
+---
+
+# AI×分析团队转型 · 2026-11-06
+
+## 深挖
+
+1. **CoCo 进 Excel/Sheets**（11/5）：表内建公式/透视，SQL 存 workbook 可刷新，RLS 随角色；接 Semantic Views。CSV 快照→ live 模型。选一条手工导出周报试点。https://www.snowflake.com/en/blog/snowflake-coco-microsoft-excel-google-sheets/
+
+2. **语义联邦 GA**（10/29）：LookML/dbt/Snowflake 语义视图进同一 context graph，冲突口径并排溯源。复用既有定义而非新 prompt。盘点 5 个 KPI 多源冲突。https://cloud.google.com/blog/products/data-analytics/expanded-semantic-model-support-in-knowledge-catalog
+
+3. **LangChain 上下文**（10/27）：描述→guides→语义层→endorsement 约 40× 自助问数；endorse 滥发则可信信号失效。1 份业务 guide 进 repo+CI 同步。https://www.getdbt.com/blog/langchain-self-serve-analytics-ai-agent-context
+
+4. **Meta:Context**（10/26）：解读语境跟 metric 同 YAML 走 PR；缺 card 则根因分析无据。为 2 个易误读 KPI 写 card。https://www.getdbt.com/blog/meta-context-dbt-semantic-layer-business-context
+
+## 趋势
+
+- 分析 AI 迁入 Excel/Sheets，产物是可刷新 workbook 非对话截图。
+- Catalog 推 context set 自学习；开量前先定人审门槛（11/4）。
+
+## 可带回团队的问题
+
+- 还有多少「影子 CSV」可用 workbook 内嵌 SQL+刷新替代？
+- dbt 与 BI 口径不一致时，Agent 上线前谁对账？
+
+---
+
+# AI×分析团队转型 · 2026-11-03
+
+## 深挖
+
+1. **Snowflake 受限会话**（10/30）：Agent 继承用户权限仍可能误删表或触 PII；RSS 为 Agent 会话设权限天花板（可禁角色、限写沙箱）。平台组发布默认 RSS 并纳入 onboarding。https://www.snowflake.com/en/blog/engineering/control-what-ai-agents-can-do-in-your-snowflake-sessions/
+
+2. **DataHub beta**（10/28）：裸接仓约 40% 准；全库暴露更差。先单域 golden eval，再叠技术/语义/知识层，Miro 约 90%。本周锁一域+十题基线再扩。https://datahub.com/blog/making-ai-agents-trustworthy-lessons-from-beta/
+
+3. **Careem 验真 PR**（10/26）：生成容易、合并在验；spec-lock 歧义指标，沙箱 compile/test 自修复至绿才提 PR。把口径追问写进 intake 模板。https://www.getdbt.com/blog/careem-ai-dbt-model-testing-validation
+
+4. **dbt Skills 评估**（10/30）：22 轮 ticket 显示方差来自流程非技能；Skills 宜留团队 deploy/review 与 Mesh 等冷门栈。eval 测 backup 与定义遵守。https://docs.getdbt.com/blog/do-coding-agents-still-need-dbt-skills
+
+## 趋势
+
+- 问数 Agent 权限从「等于用户」改为会话级降权。
+- 上下文从一次性文档转向 eval 驱动的持续运营。
+
+## 可带回团队的问题
+
+- 仓侧 Agent 是否已有低于用户的默认权限边界？
+- 能否用十道域内金题量化「加一层上下文」的边际收益？
+
+## 下期观察
+
+- DataHub Context GA 对 context 分工的落地反馈。
+
+---
+
+# AI×分析团队转型 · 2026-10-27
+
+## 深挖
+
+1. **BI「为什么错」**（10/26）：Copilot 只复述错标签，难追 dbt CASE。三 MCP 分专 Agent，六分钟三问附校验 SQL。查根因链缺哪环。https://www.getdbt.com/blog/mcp-ai-agent-dashboard-debugging
+
+2. **评测驱动**（10/26）：裸表 0%→verified 94.7%，增益在语义层非换模型。测不准不上线，golden 套件分层加料。https://www.getdbt.com/blog/data-culture-ai-analytics-agent-trust-context
+
+3. **LookML 入 Catalog GA**（10/26）：公式/Join/血缘进 context graph 并近实时同步。Agent 须拿确定性定义。https://cloud.google.com/blog/products/business-intelligence/lookml-metadata-indexing-in-knowledge-catalog-is-now-ga/
+
+4. **超越采纳**（10/23）：同等交互可能是查概念或建管道；分基础/应用/Agentic 看产能。周报加工作类型。https://www.snowflake.com/en/blog/measure-ai-value-beyond-adoption/
+
+5. **Wizard 验 DAG**（10/26）：人判 downstream 影响非 diff；dev 先验再合并，incident 降 15–20%。https://www.getdbt.com/blog/dbt-wizard-ai-agent-validation-lineage
+
+## 趋势
+
+- 排查从 BI 金表上移至建模层与 compiled SQL。
+- KPI 从交互量转向 Agentic 占比。
+
+## 可带回团队的问题
+
+- 能否量化每层语义对问数准确率的贡献？
+- 语义是否进统一 catalog，还是仍在猜 Join？
+
+## 下期观察
+
+- Gateway OTel 能否统一问数成本与轨迹。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
