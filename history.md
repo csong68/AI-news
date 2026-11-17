@@ -2,6 +2,34 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-17
+
+## 深挖
+
+1. **Agent 可观测**（11/13）：BQ/Looker 统一采集会话、延迟、知识源命中与 token，改 prompt 或 schema 前先看运营看板。把在运 Ask Agent 的 token/SQL 纳入周例会固定页。https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker/
+
+2. **共享工位协作**（11/12）：Block Buzz 让人与同事、多 Agent 同线程复盘分析，强模型编排、小模型分任务压成本。复杂专题拆「协调/执行」两套 harness 再试点。https://www.databricks.com/blog/how-block-powers-collaborative-ai-agents-buzz-and-unity-gateway
+
+3. **指标唯一出口**（11/16）：BI、表格、聊天各报一版 KPI 时争议在定义不在模型；治理指标经 dbt+MCP，分歧查 PR 与血缘。选 1 个高管周看数做「单定义多消费」闭环。https://www.getdbt.com/blog/healthcare-ai-starts-with-trusted-data
+
+4. **血缘可验收**（11/12）：Agent 选表依赖列级、自动更新且带新鲜度/认证的血缘，完整图谱≠可行动。为核心问数域列五项「AI-ready 血缘」验收并季度抽测。https://datahub.com/blog/ai-ready-data-lineage/
+
+## 趋势
+
+- Agent 运维指标并入数仓/BI 栈，与业务看板同治理周期。
+- 分析协作从单人对话转向人机共编工位与多 Agent 分工。
+
+## 可带回团队的问题
+
+- 问数 Agent 成本是否已绑定到团队预算负责人？
+- 「协调 Agent」边界由分析负责人还是平台组定义？
+
+## 下期观察
+
+- Block 多 Agent 效率前沿能否沉淀为内部分工 benchmark 模板。
+
+---
+
 # AI×分析团队转型 · 2026-11-13
 
 ## 深挖
