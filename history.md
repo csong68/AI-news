@@ -2,6 +2,36 @@
 
 ---
 
+# AI×分析团队转型 · 2026-11-20
+
+## 深挖
+
+1. **dbt Wizard Desktop 公测**（11/17）：分析侧越来越多人用 Agent 改模型，最怕多任务共写同一 dev schema、合并时看不清影响面。Desktop 为每个任务隔离 git 分支与数仓空间，合并前用可视化 DAG diff 验收，负责人仍在 loop 内。先在小队试行「一任务一工位、无 diff 不收工」。https://www.getdbt.com/blog/whats-new-in-dbt-november-2026
+
+2. **dbt 本地单测 Alpha**（11/17）：Agent 加速产 SQL 会拉高测试频次，若次次打仓，成本与反馈都会拖垮迭代。dbt v2 可将单测编译到 DuckDB 本地执行，缩短 Agent 人审前的自检环。选五条高频变更模型开启 `compute: local` 对比迭代时长。https://www.getdbt.com/blog/whats-new-in-dbt-november-2026
+
+3. **Looker 定制可视化 Skill**（11/17）：行业特型图过去常卡在前端排期；开源 looker-skills 让编码 Agent 按 Visualization API 生成图表，查询仍走 LookML 与 Knowledge Catalog。指定一张「非标但周更」的图，用自然语言迭代样式并由分析 Owner 验收语义。https://cloud.google.com/blog/products/business-intelligence/modern-data-visualizations-and-custom-charts-in-looker
+
+4. **GCS 对象增强预览**（11/19）：Agent 读合同、图纸类非结构化对象时缺可治理上下文。对象增强在存储侧写入 object context、配合 IAM，并可经 Storage Insights 进入 BigQuery 与指标表关联。梳理三条依赖文件的 Agent 用例，标出缺元数据的一等公民对象。https://cloud.google.com/blog/products/storage-data-transfer/cost-effective-ai-context-extraction-from-unstructured-gcs-data
+
+5. **《2026 分析工程现状》**：调查显 72% 团队优先 AI 辅助写码，仅 24% 同步投资 AI 辅助测试与可观测——「造得快、稳得慢」已成行业共性。管理者宜把批测、血缘、模型查询历史等稳态指标与提效 KPI 同权考核。https://www.getdbt.com/resources/state-of-analytics-engineering-2026
+
+## 趋势
+
+- 可视化交付从「等前端」转向「语义层约束 + Agent 产码」，治理焦点仍在指标定义而非图表皮肤。
+- 非结构化数据正获得类似列级元数据的治理与入仓通路，混合分析场景可开始排优先级。
+
+## 可带回团队的问题
+
+- 多 Agent 并行改仓时，merge 权限、冲突升级与回滚是否写进团队协议？
+- 我们当前更接近「72% 写码投入」还是已为测试/可观测单独立项？
+
+## 下期观察
+
+- dbt Wizard 路线图中的治理护栏与 AI 用量成本封顶何时落地。
+
+---
+
 # AI×分析团队转型 · 2026-09-18
 
 ## 深挖
